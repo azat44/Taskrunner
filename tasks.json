@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "print",
+      "params": { "message": "hello world" },
+      "timeout": "2s",
+      "retries": 0
+    },
+    {
+      "id": "t2",
+      "type": "calc",
+      "params": { "value": 42 },
+      "timeout": "1s",
+      "retries": 1
+    },
+    {
+      "id": "t3",
+      "type": "fake",
+      "params": { "behavior": "success", "delay": "100ms" },
+      "timeout": "2s",
+      "retries": 0
+    },
+    {
+      "id": "t4",
+      "type": "fake",
+      "params": { "behavior": "fail", "delay": "50ms" },
+      "timeout": "2s",
+      "retries": 2
+    },
+    {
+      "id": "t5",
+      "type": "fake",
+      "params": { "behavior": "timeout", "delay": "50ms" },
+      "timeout": "200ms",
+      "retries": 1
+    }
+  ]
+}
